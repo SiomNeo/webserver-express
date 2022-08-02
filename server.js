@@ -3,7 +3,7 @@ const app = express();
 const hbs = require('hbs');
 require('./hbs/helpers');
 
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 5000;
 
 app.use(express.static(__dirname + '/public'))
 
@@ -15,7 +15,7 @@ app.set('view engine', 'hbs');
 
 app.get('/', (req, res) => {
     res.render('home', {
-        nombre: 'Sergio ORdoñez'
+        nombre: 'Sergio ORdoñez e Isabella Ordoñez'
     });
 
 })
